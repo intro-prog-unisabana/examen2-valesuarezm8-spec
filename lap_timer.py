@@ -28,8 +28,13 @@ def add_lap(timer, time):
     init()
     max_laps=0
     while True:
-        if max_laps >=100:
+        if max_laps and time >=100:
             max_laps+1
+
+        timer = max_laps/time
+    
+        return timer
+
            
 
     
