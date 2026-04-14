@@ -14,7 +14,7 @@ def init(max_laps):
     # TODO: Implementar
     maximo= int(100)
     time= [1.85, 1.02, 0.91, 0.87, 0.85, 0.82, 0.82, 0.82, 0.83, 0.9]
-    total = sum(maximo, time)/2
+    total = sum(maximo, time)/len(time)
     return total
 
 
@@ -25,9 +25,10 @@ def add_lap(timer, time):
     Retorna el diccionario modificado.
     """
     # TODO: Implementar
+    init()
     max_laps=0
     while True:
-        if max_laps >100:
+        if max_laps >=100:
             max_laps+1
            
 
@@ -40,7 +41,8 @@ def count(timer):
     Retorna el numero de vueltas agregadas.
     """
     # TODO: Implementar
-    pass
+    add_lap(timer,time)
+    return max_laps
 
 
 def cumulative_time(timer):
