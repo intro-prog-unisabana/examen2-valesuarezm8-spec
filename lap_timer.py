@@ -12,10 +12,10 @@ def init(max_laps):
     Crea y retorna un diccionario para almacenar hasta max_laps vueltas.
     """
     # TODO: Implementar
-
-
-
-    return
+    maximo= int(100)
+    time= [1.85, 1.02, 0.91, 0.87, 0.85, 0.82, 0.82, 0.82, 0.83, 0.9]
+    total = sum(maximo, time)/2
+    return total
 
 
 
@@ -25,7 +25,14 @@ def add_lap(timer, time):
     Retorna el diccionario modificado.
     """
     # TODO: Implementar
-    pass
+    max_laps=0
+    while True:
+        if max_laps >100:
+            max_laps+1
+           
+
+    
+
 
 
 def count(timer):
@@ -59,7 +66,7 @@ def fastest_lap(timer):
     """
     # TODO: Implementar
     pass
-
+tim
 
 def fastest_multi_lap(timer, k):
     """
