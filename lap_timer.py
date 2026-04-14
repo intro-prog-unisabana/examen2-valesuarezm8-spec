@@ -18,7 +18,6 @@ def init(max_laps):
     return total
 
 
-
 def add_lap(timer, time):
     """
     Agrega una nueva vuelta con el tiempo especificado.
@@ -73,7 +72,7 @@ def fastest_lap(timer):
     """
     # TODO: Implementar
     pass
-tim
+
 
 def fastest_multi_lap(timer, k):
     """
